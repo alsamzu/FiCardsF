@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1976D2</color>
+
+    <color name="colorPrimaryDark">#0d47a1</color>
+
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="myred">#f44336</color>
+
+    <color name="mydarkblue">#0d47a1</color>
+
+    <color name="textColor">#1565c0</color>
+
+    <color name="mylightblue">#e3f2fd</color>
+
+    <color name="fibonacciblue">#90caf9</color>
+</resources>

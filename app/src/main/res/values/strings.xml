@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">FiCards</string>
+    <string name="username">username</string>
+
+    <string name="password">password</string>
+
+    <string name="forgot_password">Forgot Password?</string>
+
+    <string name="admission_no">Admission No:</string>
+
+    <string name="name">Name:</string>
+
+    <string name="Student_class">Class: </string>
+
+    <string name="maths">Maths:</string>
+
+    <string name="total">Total:</string>
+
+    <string name="mean_grade">Mean Grade:</string>
+
+    <string name="attendance">Attendance</string>
+
+    <string name="receipt_no">receipt no.</string>
+
+    <string name="amount">amount</string>
+
+    <string name="date">date</string>
+
+
+    -
+    <string-array name="results">
+
+        <item>Entry Exam</item>
+
+        <item>Cat 1</item>
+
+        <item>Midterm</item>
+
+        <item>Cat 2</item>
+
+        <item>End term</item>
+
+    </string-array>
+
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="exams">Exams</string>
+    <string name="fees">Fees</string>
+    <string name="news_letter">News Letter</string>
+    <string name="discipline">Discipline</string>
+    <string name="health">Health</string>
+    <string name="track_bus">Track Bus</string>
+</resources>

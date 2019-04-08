@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.FeesActivity">
+
+    <TextView
+        android:id="@+id/nametextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Name:"
+        android:textColor="@color/textColor"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/studentName"
+        app:layout_constraintHorizontal_bias="0.928"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/studentName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="176dp"
+        android:layout_marginRight="176dp"
+        android:text="Zulfa Hamadi"
+        android:textColor="@color/textColor"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/admtextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:layout_marginLeft="96dp"
+        android:layout_marginTop="8dp"
+        android:text="Admission No:"
+        android:textColor="@color/textColor"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nametextView" />
+
+    <TextView
+        android:id="@+id/admNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="176dp"
+        android:layout_marginRight="176dp"
+        android:text="4046"
+        android:textColor="@color/textColor"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/studentName" />
+
+    <TextView
+        android:id="@+id/classtextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:layout_marginLeft="96dp"
+        android:layout_marginTop="8dp"
+        android:text="Class:"
+        android:textColor="@color/textColor"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/admtextView" />
+
+    <TextView
+        android:id="@+id/studentClass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="244dp"
+        android:layout_marginRight="244dp"
+        android:text="4B"
+        android:textColor="@color/textColor"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/admNo" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="575dp"
+        android:background="@color/mylightblue"
+
+        android:layout_marginLeft="68dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/classtextView">
+
+        <TableRow android:background="@drawable/table_heading">
+
+            <TextView
+
+                android:gravity="center"
+
+                android:padding="10dp"
+                android:text="@string/receipt_no"
+                android:textAllCaps="true"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+
+            <TextView
+
+                android:gravity="center"
+                android:padding="10dp"
+
+                android:text="@string/date"
+                android:textAllCaps="true"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+
+            <TextView
+
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/amount"
+                android:textAllCaps="true"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow android:background="@color/mylightblue">
+            <TextView
+
+                android:gravity="left"
+                android:padding="10dp"
+                android:text="R032"
+                android:textColor="#424242"
+                android:textStyle="bold" />
+
+            <TextView
+
+                android:gravity="left"
+                android:padding="10dp"
+                android:text="26/05/18"
+                android:textColor="#424242"
+                android:textStyle="bold" />
+
+            <TextView
+
+                android:gravity="left"
+                android:padding="10dp"
+                android:text="KSH.500"
+                android:textColor="#424242"
+                android:textStyle="bold" />
+
+
+        </TableRow>
+
+
+        <TableRow android:background="#fafafa">
+            <TextView
+
+                android:gravity="left"
+                android:padding="10dp"
+                android:text="R045"
+                android:textColor="#424242"
+                android:textStyle="bold" />
+
+            <TextView
+
+                android:gravity="left"
+                android:padding="10dp"
+                android:text="06/08/18"
+                android:textColor="#424242"
+                android:textStyle="bold" />
+
+            <TextView
+
+                android:gravity="left"
+                android:padding="10dp"
+                android:text="KSH.300"
+                android:textColor="#424242"
+                android:textStyle="bold" />
+
+
+        </TableRow>
+
+        <TableRow android:background="@color/mylightblue">
+            <TextView
+
+                android:gravity="left"
+                android:padding="10dp"
+                android:text="R002"
+                android:textColor="#424242"
+                android:textStyle="bold" />
+
+            <TextView
+
+                android:gravity="left"
+                android:padding="10dp"
+                android:text="20/09/18"
+                android:textColor="#424242"
+                android:textStyle="bold" />
+
+            <TextView
+
+                android:gravity="left"
+                android:padding="10dp"
+                android:text="KSH.1000"
+                android:textColor="#424242"
+                android:textStyle="bold" />
+
+
+        </TableRow>
+
+        <TableRow android:background="#fafafa">
+            <TextView
+
+                android:gravity="left"
+                android:padding="10dp"
+                android:text="R014"
+                android:textColor="#424242"
+                android:textStyle="bold" />
+
+            <TextView
+
+                android:gravity="left"
+                android:padding="10dp"
+                android:text="06/11/18"
+                android:textColor="#424242"
+                android:textStyle="bold" />
+
+            <TextView
+
+                android:gravity="left"
+                android:padding="10dp"
+                android:text="KSH.800"
+                android:textColor="#424242"
+                android:textStyle="bold" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:weightSum="3"
+            android:background="@color/mylightblue">
+            <TextView
+
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="TOTAL:"
+                android:textSize="20sp"
+                android:textColor="@color/textColor"
+                android:textStyle="bold" />
+            <TextView
+
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="KSH.2600"
+                android:textSize="20sp"
+                android:textColor="@color/textColor"
+                android:textStyle="bold" />
+
+
+
+        </TableRow>
+        <TableRow
+            android:weightSum="3"
+            android:background="@color/mylightblue">
+
+            <TextView
+
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="BALANCE:"
+                android:textColor="@color/textColor"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <TextView
+
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="KSH.0.0"
+                android:textSize="20sp"
+                android:textColor="@color/textColor"
+                android:textStyle="bold" />
+
+
+
+        </TableRow>
+    </TableLayout>
+
+
+</android.support.constraint.ConstraintLayout>
