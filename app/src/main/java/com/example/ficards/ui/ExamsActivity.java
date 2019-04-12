@@ -18,9 +18,9 @@ public class ExamsActivity extends AppCompatActivity {
 
 
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
-                R.array.results, android.R.layout.simple_spinner_item);
+                R.array.results, R.layout.spinner_item_selected);
 
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        adapter.setDropDownViewResource(R.layout.spinner_dropdown_item);
 
         checkResults.setAdapter(adapter);
     }

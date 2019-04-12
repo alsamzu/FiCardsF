@@ -41,13 +41,13 @@
             android:layout_below="@+id/item_detail"
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
-            android:layout_marginStart="241dp"
-            android:layout_marginLeft="241dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginLeft="150dp"
             android:layout_marginTop="44dp"
             android:background="@drawable/red_bg"
             android:textAlignment="center"
             android:gravity="right"
-            android:padding="30dp"
+            android:padding="10dp"
             android:textColor="#fff"
             android:textStyle="bold" />
     </RelativeLayout>
