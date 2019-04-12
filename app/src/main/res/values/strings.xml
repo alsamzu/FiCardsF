@@ -49,4 +49,16 @@
     <string name="discipline">Discipline</string>
     <string name="health">Health</string>
     <string name="track_bus">Track Bus</string>
+    <string name="day">Day</string>
+    <string name="present">Present</string>
+    <string name="absent">Absent</string>
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
 </resources>

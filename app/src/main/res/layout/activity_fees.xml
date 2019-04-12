@@ -10,17 +10,20 @@
         android:id="@+id/nametextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginLeft="28dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginLeft="72dp"
+        android:layout_marginTop="70dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
         android:text="Name:"
         android:textColor="@color/textColor"
-        android:textSize="14sp"
+        android:textSize="28sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/admtextView"
         app:layout_constraintEnd_toStartOf="@+id/studentName"
-        app:layout_constraintHorizontal_bias="0.928"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -28,27 +31,35 @@
         android:id="@+id/studentName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
-        android:layout_marginEnd="176dp"
-        android:layout_marginRight="176dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginRight="80dp"
         android:text="Zulfa Hamadi"
         android:textColor="@color/textColor"
-        android:textSize="14sp"
+        android:textSize="28sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/admNo"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/nametextView"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/admtextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="96dp"
-        android:layout_marginLeft="96dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="82dp"
+        android:layout_marginLeft="82dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="8dp"
         android:text="Admission No:"
         android:textColor="@color/textColor"
-        android:textSize="14sp"
+        android:textSize="28sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/classtextView"
+        app:layout_constraintEnd_toStartOf="@+id/admNo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nametextView" />
 
@@ -56,27 +67,36 @@
         android:id="@+id/admNo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="176dp"
-        android:layout_marginRight="176dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginBottom="240dp"
         android:text="4046"
         android:textColor="@color/textColor"
-        android:textSize="14sp"
+        android:textSize="28sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/admtextView"
         app:layout_constraintTop_toBottomOf="@+id/studentName" />
 
     <TextView
         android:id="@+id/classtextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="96dp"
-        android:layout_marginLeft="96dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginLeft="88dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginBottom="147dp"
         android:text="Class:"
         android:textColor="@color/textColor"
-        android:textSize="14sp"
+        android:textSize="28sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout2"
+        app:layout_constraintEnd_toStartOf="@+id/studentClass"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/admtextView" />
 
@@ -84,23 +104,34 @@
         android:id="@+id/studentClass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="244dp"
-        android:layout_marginRight="244dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="252dp"
+        android:layout_marginRight="252dp"
+        android:layout_marginBottom="175dp"
         android:text="4B"
         android:textColor="@color/textColor"
-        android:textSize="14sp"
+        android:textSize="28sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/classtextView"
         app:layout_constraintTop_toBottomOf="@+id/admNo" />
 
     <TableLayout
+        android:id="@+id/tableLayout2"
         android:layout_width="wrap_content"
-        android:layout_height="575dp"
-        android:background="@color/mylightblue"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
 
-        android:layout_marginLeft="68dp"
         android:layout_marginTop="36dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/mylightblue"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/classtextView">
 
@@ -137,6 +168,7 @@
         </TableRow>
 
         <TableRow android:background="@color/mylightblue">
+
             <TextView
 
                 android:gravity="left"
@@ -166,6 +198,7 @@
 
 
         <TableRow android:background="#fafafa">
+
             <TextView
 
                 android:gravity="left"
@@ -194,6 +227,7 @@
         </TableRow>
 
         <TableRow android:background="@color/mylightblue">
+
             <TextView
 
                 android:gravity="left"
@@ -222,6 +256,7 @@
         </TableRow>
 
         <TableRow android:background="#fafafa">
+
             <TextView
 
                 android:gravity="left"
@@ -250,31 +285,33 @@
         </TableRow>
 
         <TableRow
-            android:weightSum="3"
-            android:background="@color/mylightblue">
+            android:background="@color/mylightblue"
+            android:weightSum="3">
+
             <TextView
 
                 android:gravity="center"
                 android:padding="10dp"
                 android:text="TOTAL:"
-                android:textSize="20sp"
                 android:textColor="@color/textColor"
+                android:textSize="20sp"
                 android:textStyle="bold" />
+
             <TextView
 
                 android:gravity="center"
                 android:padding="10dp"
                 android:text="KSH.2600"
-                android:textSize="20sp"
                 android:textColor="@color/textColor"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
 
-
         </TableRow>
+
         <TableRow
-            android:weightSum="3"
-            android:background="@color/mylightblue">
+            android:background="@color/mylightblue"
+            android:weightSum="3">
 
             <TextView
 
@@ -284,15 +321,15 @@
                 android:textColor="@color/textColor"
                 android:textSize="18sp"
                 android:textStyle="bold" />
+
             <TextView
 
                 android:gravity="center"
                 android:padding="10dp"
                 android:text="KSH.0.0"
-                android:textSize="20sp"
                 android:textColor="@color/textColor"
+                android:textSize="20sp"
                 android:textStyle="bold" />
-
 
 
         </TableRow>
